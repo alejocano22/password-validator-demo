@@ -1,0 +1,9 @@
+.range-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.range-input-value {
+  margin-left: 0.5rem;
+  margin-bottom: 0.1rem;
+}

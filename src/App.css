@@ -1,38 +1,81 @@
-.App {
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 1rem;
+  max-width: 100%;
+}
+
+.password-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.options-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 2rem;
+  border-top: 1px solid gray;
+}
+
+.options-title {
+  color: gray;
+  margin-bottom: 0;
+}
+
+.password-status {
+  margin: 0;
+}
+
+.option-btn {
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  padding: 0.2rem 0.8rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.option-btn-selected {
+  border-width: 2px;
+}
+
+.option-btn:hover {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.option-btn-selected-white-text {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.option-btn-selected-green {
+  background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.option-btn-selected-blue {
+  background-color: #004eff;
+}
+
+.option-btn-selected-red {
+  background-color: red;
+}
+
+.option-btn-selected-black {
+  background-color: black;
+}
+
+@media (min-width: 600px) {
+  .password-container {
+    min-height: 328px;
+    min-width: 482px;
   }
 }

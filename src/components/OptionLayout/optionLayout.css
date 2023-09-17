@@ -1,0 +1,13 @@
+.option-layout-container {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.option-layout-title {
+  color: gray;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  margin-right: 2rem;
+  min-width: 40%;
+}
